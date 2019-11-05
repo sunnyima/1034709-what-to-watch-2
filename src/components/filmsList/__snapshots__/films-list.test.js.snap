@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FilmList correctly renders after relaunch 1`] = `
+<div>
+  <div>
+    <p>
+      Fantastic Beasts
+    </p>
+  </div>
+  <div>
+    <p>
+      Bohemian Rhapsody
+    </p>
+  </div>
+  <div>
+    <p>
+      Macbeth
+    </p>
+  </div>
+</div>
+`;
