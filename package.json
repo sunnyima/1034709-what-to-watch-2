@@ -18,8 +18,8 @@
     "eslint-config-htmlacademy": "0.5.2",
     "eslint-plugin-react": "7.16.0",
     "webpack": "4.41.2",
-    "webpack-cli": "3.3.9",
-    "webpack-dev-server": "3.8.2"
+    "webpack-dev-server": "3.8.2",
+    "webpack-cli": "3.3.9"
   },
   "engines": {
     "node": "10"

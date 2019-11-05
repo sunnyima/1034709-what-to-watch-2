@@ -2,15 +2,15 @@ import React from 'react';
 
 import PropTypes from 'prop-types';
 
-const film = (props) => {
+const Film = (props) => {
   const title = props.title;
   return <div>
     <p>{title}</p>
   </div>;
 };
 
-film.propTypes = {
+Film.propTypes = {
   title: PropTypes.string.isRequired,
 };
 
-export default film;
+export default Film;

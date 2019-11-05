@@ -1,17 +1,17 @@
 import React from 'react';
 
 import PropTypes from 'prop-types';
-import film from '../film/film';
+import Film from '../film/film';
 
-const filmsList = (props) => {
+const FilmsList = (props) => {
   const films = props.films;
   return <div>
-    {films.map((oneFilm) => (<film key={oneFilm} title={oneFilm}>{oneFilm}</film>))}
+    {films.map((oneFilm) => (<Film key={oneFilm} title={oneFilm}>{oneFilm}</Film>))}
   </div>;
 };
 
-filmsList.propTypes = {
+FilmsList.propTypes = {
   films: PropTypes.array.isRequired,
 };
 
-export default filmsList;
+export default FilmsList;
