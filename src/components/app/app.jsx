@@ -1,5 +1,5 @@
 import React from 'react';
-import FilmsList from '../filmsList/films-list';
+import FilmsList from '../films-list/films-list';
 
 const films = [`Fantastic Beasts`, `Bohemian Rhapsody`, `Macbeth`];
 const App = () =>{

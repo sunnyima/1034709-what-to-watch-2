@@ -6,16 +6,31 @@ exports[`App correctly renders after relaunch 1`] = `
     <p>
       Fantastic Beasts
     </p>
+    <button
+      onClick={[Function]}
+    >
+      View Info
+    </button>
   </div>
   <div>
     <p>
       Bohemian Rhapsody
     </p>
+    <button
+      onClick={[Function]}
+    >
+      View Info
+    </button>
   </div>
   <div>
     <p>
       Macbeth
     </p>
+    <button
+      onClick={[Function]}
+    >
+      View Info
+    </button>
   </div>
 </div>
 `;

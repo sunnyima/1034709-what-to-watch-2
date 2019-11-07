@@ -5,5 +5,10 @@ exports[`Film correctly renders after relaunch 1`] = `
   <p>
     test
   </p>
+  <button
+    onClick={[MockFunction]}
+  >
+    View Info
+  </button>
 </div>
 `;
