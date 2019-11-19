@@ -1,36 +1,131 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`FilmList correctly renders after relaunch 1`] = `
-<div>
-  <div>
-    <p>
-      Fantastic Beasts
-    </p>
-    <button
-      onClick={[Function]}
+Array [
+  <article
+    className="small-movie-card catalog__movies-card"
+    onMouseEnter={[Function]}
+  >
+    <div
+      className="small-movie-card__image"
     >
-      View Info
-    </button>
-  </div>
-  <div>
-    <p>
-      Bohemian Rhapsody
-    </p>
-    <button
-      onClick={[Function]}
+      <img
+        alt="Побег из Шоушенка"
+        height="175"
+        srcSet="http://t3.gstatic.com/images?q=tbn:ANd9GcTY9gSsZBmGbhNZrkkFgmT1npIV_px6Wuc09eTaUFEpoyVJAOb0"
+        width="280"
+      />
+    </div>
+    <h3
+      className="small-movie-card__title"
     >
-      View Info
-    </button>
-  </div>
-  <div>
-    <p>
-      Macbeth
-    </p>
-    <button
-      onClick={[Function]}
+      <a
+        className="small-movie-card__link"
+        href=""
+      >
+        Побег из Шоушенка
+      </a>
+    </h3>
+  </article>,
+  <article
+    className="small-movie-card catalog__movies-card"
+    onMouseEnter={[Function]}
+  >
+    <div
+      className="small-movie-card__image"
     >
-      View Info
-    </button>
-  </div>
-</div>
+      <img
+        alt="Зелёная миля"
+        height="175"
+        srcSet="https://www.kino-teatr.ru/movie/posters/big/6/26086.jpg"
+        width="280"
+      />
+    </div>
+    <h3
+      className="small-movie-card__title"
+    >
+      <a
+        className="small-movie-card__link"
+        href=""
+      >
+        Зелёная миля
+      </a>
+    </h3>
+  </article>,
+  <article
+    className="small-movie-card catalog__movies-card"
+    onMouseEnter={[Function]}
+  >
+    <div
+      className="small-movie-card__image"
+    >
+      <img
+        alt="Список Шиндлера"
+        height="175"
+        srcSet="https://www.kino-teatr.ru/movie/poster/19751.jpg"
+        width="280"
+      />
+    </div>
+    <h3
+      className="small-movie-card__title"
+    >
+      <a
+        className="small-movie-card__link"
+        href=""
+      >
+        Список Шиндлера
+      </a>
+    </h3>
+  </article>,
+  <article
+    className="small-movie-card catalog__movies-card"
+    onMouseEnter={[Function]}
+  >
+    <div
+      className="small-movie-card__image"
+    >
+      <img
+        alt="Унесённые ветром"
+        height="175"
+        srcSet="https://www.kino-teatr.ru/movie/posters/big/3/24253.jpg"
+        width="280"
+      />
+    </div>
+    <h3
+      className="small-movie-card__title"
+    >
+      <a
+        className="small-movie-card__link"
+        href=""
+      >
+        Унесённые ветром
+      </a>
+    </h3>
+  </article>,
+  <article
+    className="small-movie-card catalog__movies-card"
+    onMouseEnter={[Function]}
+  >
+    <div
+      className="small-movie-card__image"
+    >
+      <img
+        alt="Форрест Гамп"
+        height="175"
+        srcSet="https://www.kino-teatr.ru/movie/posters/big/1/22041.jpg"
+        width="280"
+      />
+    </div>
+    <h3
+      className="small-movie-card__title"
+    >
+      <a
+        className="small-movie-card__link"
+        href=""
+      >
+        Форрест Гамп
+      </a>
+    </h3>
+  </article>,
+]
 `;

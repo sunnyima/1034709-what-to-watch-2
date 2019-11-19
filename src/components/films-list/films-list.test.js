@@ -1,8 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import FilmsList from "./films-list";
-
-const films = [`Fantastic Beasts`, `Bohemian Rhapsody`, `Macbeth`];
+import films from "../../mocks/films";
 
 it(`FilmList correctly renders after relaunch`, () => {
   const tree = renderer.create(<FilmsList

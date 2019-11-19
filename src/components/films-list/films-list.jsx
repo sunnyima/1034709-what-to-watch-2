@@ -3,24 +3,72 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Film from '../film/film';
 
-const clickHandler = () => {
-  //
-};
+class FilmsList extends React.PureComponent {
+  constructor(props) {
+    super(props);
 
-const FilmsList = (props) => {
-  const films = props.films;
-  return <div>
-    {films.map((oneFilm) => (<Film
-      key={oneFilm}
-      title={oneFilm}
-      onClick={clickHandler}>
-      {oneFilm}
-    </Film>))}
-  </div>;
-};
+    this.state = {
+      selectedFilm: {},
+    };
+  }
+
+  render() {
+    const {
+      films,
+    } = this.props;
+
+    return films.map((oneFilm) =>{
+      return <Film key={oneFilm.id} filmInfo={oneFilm} onHover={()=>{
+        this.setState(() => {
+          return {
+            selectedFilm: oneFilm,
+          };
+        });
+      }}/>;
+    });
+  }
+}
+
 
 FilmsList.propTypes = {
-  films: PropTypes.array.isRequired,
+  films: PropTypes.arrayOf(
+      PropTypes.shape({
+        id: PropTypes.number.isRequired,
+        name: PropTypes.string.isRequired,
+        posterImage: PropTypes.string,
+        previewImage: PropTypes.string.isRequired,
+        backgroundImage: PropTypes.string,
+        backgroundColor: PropTypes.string,
+        videoLink: PropTypes.string,
+        previewVideoLink: PropTypes.string,
+        description: PropTypes.string.isRequired,
+        rating: PropTypes.number,
+        director: PropTypes.string,
+        starring: PropTypes.array,
+        runTime: PropTypes.number,
+        genre: PropTypes.string.isRequired,
+        released: PropTypes.number.isRequired,
+        isFavorite: PropTypes.bool.isRequired,
+      }).isRequired
+  ).isRequired,
+  selectedFilm: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    name: PropTypes.string.isRequired,
+    posterImage: PropTypes.string,
+    previewImage: PropTypes.string.isRequired,
+    backgroundImage: PropTypes.string,
+    backgroundColor: PropTypes.string,
+    videoLink: PropTypes.string,
+    previewVideoLink: PropTypes.string,
+    description: PropTypes.string.isRequired,
+    rating: PropTypes.number,
+    director: PropTypes.string,
+    starring: PropTypes.array,
+    runTime: PropTypes.number,
+    genre: PropTypes.string.isRequired,
+    released: PropTypes.number.isRequired,
+    isFavorite: PropTypes.bool.isRequired,
+  }).isRequired
 };
 
 export default FilmsList;

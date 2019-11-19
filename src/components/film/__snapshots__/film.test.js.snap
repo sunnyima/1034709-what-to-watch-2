@@ -1,14 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Film correctly renders after relaunch 1`] = `
-<div>
-  <p>
-    test
-  </p>
-  <button
-    onClick={[MockFunction]}
+<article
+  className="small-movie-card catalog__movies-card"
+  onMouseEnter={[MockFunction]}
+>
+  <div
+    className="small-movie-card__image"
   >
-    View Info
-  </button>
-</div>
+    <img
+      alt=""
+      height="175"
+      srcSet=""
+      width="280"
+    />
+  </div>
+  <h3
+    className="small-movie-card__title"
+  >
+    <a
+      className="small-movie-card__link"
+      href=""
+    >
+      
+    </a>
+  </h3>
+</article>
 `;
